@@ -25,4 +25,8 @@ export class OauthService extends PassportStrategy(Strategy, 'oauth2') {
   async login() {
     return { message: 'OAuth2 login initiated' };
   }
+
+  async logout() {
+    return { message: 'OAuth2 logout initiated' };
+  }
 }
